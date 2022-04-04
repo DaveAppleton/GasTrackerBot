@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>New in version {{.Version}}</title>
+        <style>
+            .sansserif {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .monospace {
+                font-family: "Lucida Console", Courier, monospace;
+            }
+            #gas {
+                font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                border-collapse: collapse;
+
+            }
+            #gas th {
+                padding: 15px;
+                
+                text-align: left;
+                background-color: #4CAF50;
+                color: white;
+            }
+            #gas td, #customers th {
+               border: 1px solid #ddd;
+                padding: 8px;
+            }
+            #gas tr:nth-child(even){background-color: #f2f2f2;}
+
+            td.desc {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
+                background-color: #4CAF50;
+                color: white;
+            }
+            td.data {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: center;
+            }
+            div.advert {
+                background-color: lightgrey;
+                width: 300px;
+                font-family: Arial, Helvetica, sans-serif;
+                border: 15px solid green;
+                padding: 20px;
+                margin: 20px;
+            }
+            div.void {
+                background-color: white;
+                border: 15px solid white;
+                width: 300px;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+                padding: 20px;
+                margin: 20px;
+            }
+            div.update {
+                background-color: lightgrey;
+                width: 300px;
+                border: 15px solid darkgray;
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 20px;
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="void"><h3>🎩 New in Version {{.Version}} 🎩</h3></div>
+        <div  class="update">
+            {{.Update}}
+        </div>
+        <p>&nbsp;</p>
+        <div class="advert">{{.Advert}}</div>
+    </body>
+</html>

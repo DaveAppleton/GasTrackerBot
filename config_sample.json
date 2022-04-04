@@ -1,0 +1,45 @@
+{
+    "log" : "gasbot.log",
+    "live" : false,
+    "HTTP_TIMEOUT" : 30,
+    "GAS_STATION" : "https://ethgasstation.info/api/ethgasAPI.json?api-key=248113dde30568eef8488e1bc224e33d66b05094007fb67bd157e6942f5b",
+
+    "DBCONNECT" : "host=localhost user=gasbot port=5432 sslmode=disable dbname=gasbot password=grimble connect_timeout=10",
+    "DBCONNECT_STAGING" : "host=localhost user=gasbot port=5432 sslmode=disable dbname=gasbot_staging password=grimble connect_timeout=10",
+    "ALERTBOT_TELE_TOKEN" : "Telegram token here",
+    "ALERTBOT_STAGING_TOKEN" : "test version token here",
+    "ETHERSCAN_KEY" : "etherscan key here",
+    "Version" : 0.9,
+
+    "parsemode" : "markdown",
+
+    "unrecognised_command" : "⛔️ *Sorry* ⛔️\nI am afraid I could not work out what you were asking me to do\n",
+    "valid_commands" : "Current valid commands are :\n`/info`\n`/status`\n`/level`\n\n*IMMEDIATE INFO*\n`/gasnow`\n`/gastoken`\n\n*GRAPHS*\n`/day`\n`/week`",
+
+    "welcome_msg" : "Welcome to the Gas Price Alert Bot\n\n",
+
+    "level_number_error" : "*error in number*‼️\nusage : /level <num>\n<num> should be target amount in GWei (decimal) > 0",
+
+    "start_error" : "could not sort out my numbers 🤨",
+
+    "level_error" : "*usage* \n`/level <number>` to receive hourly alerts when safe low gas price falls below <num>.\n `/level off` stops the alerts until you set a new value.",
+
+
+    "info_error" : "*usage* \n`/info on` to get comprehensive gas price info once an hour.\n `/info off` stops the notifications.",
+    "tech_error" : "*Sorry* 😢\nWe are having a bit of trouble doing that right now.\nThe incident has been logged.",
+    "info_on" : "You have subscribed to updates on gas level once an hour",
+    "info_off" : "You have cancelled hourly gas level updates",
+    "info_parameter_error" : "`/info` accepts\n`yes` or `on` to start notifications\n`no` or `off` to stop them",
+
+    "ADVERT" : "\n\nThanks for using [Gas Price Tracker](https://twitter.com/GasRacker)\ndata source is `@ETHGasStation` and `@sparkpool_eth`\n\nhelp fund server / dev : `gastrackerbot.eth`",
+    "HTML_ADVERT" : "Thanks for using the <a href=\"https://twitter.com/GasRacker\">Gas Price Tracker</a><br>data sources are <ul><li><a href=\"https://twitter.com/ETHGasStation\">ETHGasStation</a></li><li><a href=\"https://twitter.com/sparkpool_eth\">Sparkpool</a></li><li><a href=\"https://twitter.com/etherscan\">Etherscan</a></li></ul><p>help fund server / dev @ <span class=\"monospace\">gastrackerbot.eth</span></p>",
+
+    "ADVERT_" : "\n\ngas price bot brought to you by Dave Appleton \n(`@AppletonDave` on twitter)\ndata source is `@ETHGasStation` and `@sparkpool_eth`\n\nhelp fund server / dev : `gastrackerbot.eth`",
+    "HTML_ADVERT_" : "\n\ngas price bot brought to you by <a href=\"https://twitter.com/AppletonDave\">Dave Appleton</a>\ndata source is <span class=\"monotype\">@ETHGasStation</span> and <span class=\"monotype\">@sparkpool_eth</span>\n\nhelp fund server / dev : <span class=\"monotype\">gastrackerbot.eth</span>",
+    "NewIn0.1" : "🎩 *New Version 0.1* 🎩\nCurrent valid commands are :\n`/info`\n`/status`\n`/level`",
+    "NewIn0.3" : "🎩 *New Version 0.3* 🎩\nGet a chart with new commands :\n`/day`\n`/week`\n",
+    "NewIn0.6" : "🎩 *New Version 0.6* 🎩\n\n*INSTANT PRICES*\n\nget recent gas price (<5 mins) from with :\n`/gasnow`\n\n added `@sparkpool_eth` as a data source",
+    "NewIn0.7" : "🎩 *New Version 0.7* 🎩\n\n*GAS TOKEN PRICES*\nget prices of CHI and GST2 with `/gastoken`\n\ncourtesy of [1 inch exchange](https://1inch.exchange/#/r/0xCC8De675bF67505A4b1D1c1A3B63E8f35599d65E)",
+    "NewIn0.8" : "<ul><li>Medianised multiple data sources</li><li>prettier messages 😃</li></ul>"
+    
+}

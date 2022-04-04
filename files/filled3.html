@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gas Prices at 2020-08-30 21:54:09.416031 +0800 +08 m=+3.446306975</title>
+        <style>
+            .sansserif {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .monospace {
+                font-family: "Lucida Console", Courier, monospace;
+            }
+            #gas {
+                font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                border-collapse: collapse;
+
+            }
+            #gas th {
+                padding: 15px;
+                
+                text-align: left;
+                background-color: #4CAF50;
+                color: white;
+            }
+            #gas td, #customers th {
+               border: 1px solid #ddd;
+                padding: 8px;
+            }
+            #gas tr:nth-child(even){background-color: #f2f2f2;}
+
+            td.desc {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
+                background-color: #4CAF50;
+                color: white;
+            }
+            td.data {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: center;
+            }
+            div {
+                background-color: lightgrey;
+                width: 300px;
+                border: 15px solid green;
+                padding: 20px;
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <table id="gas">
+            <tr>
+                <th>&nbsp;</th>
+                <th>EthGasStn</th>
+                <th>GasNow</th>
+                <th>Etherscan</th>
+            </tr>
+            <tr>
+                <td class="desc">Fastest</td>
+                <td class="data">251.00</td>
+                <td class="data">251.00</td>
+                <td class="data">242.00</td>
+            </tr>
+            <tr>
+                <td class="desc">Fast</td>
+                <td class="data">223.00</td>
+                <td class="data">219.00</td>
+                <td class="data">205.00</td>
+            </tr>
+            <tr>
+                <td class="desc">Safelow</td>
+                <td class="data">171.00</td>
+                <td class="data">201.87</td>
+                <td class="data">189.00</td>
+            </tr>
+        </table>
+        <p></p>
+        <div class="sansserif">Thanks for using the <a href="https://twitter.com/GasRacker">Gas Price Tracker</a><br>data sources are <ul><li><a href="https://twitter.com/ETHGasStation">ETHGasStation</a></li><li><a href="https://twitter.com/sparkpool_eth">Sparkpool</a></li><li><a href="https://twitter.com/etherscan">Etherscan</a></li></ul><p>help fund server / dev @ <span class="monospace">gastrackerbot.eth</span></p></div>
+    </body>
+</html>
